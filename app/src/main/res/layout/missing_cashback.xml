@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:id="@+id/backFromMissingCashback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_backward_arrow"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:scaleType="fitCenter"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/launchericon"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Missing Cashback"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:background="#2e2020"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="Something went wrong...!!!"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/top"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:clipToPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Please fill the form below to generate a ticket:"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/custom_background">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/retailerList">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_background"
+                        android:textSize="15sp"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textColorHint="#b2b2b2"
+                        android:hint="Product Name"/>
+
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date Of Transaction"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_background"
+                        android:textSize="15sp"
+                        android:id="@+id/dateOfTranscation"
+                        android:drawablePadding="10dp"
+                        android:padding="8dp"
+                        android:textColorHint="#b2b2b2"
+                        android:hint="2017/2/10"/>
+
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Amount"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/orderAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_background"
+                        android:textSize="15sp"
+                        android:inputType="numberDecimal"
+                        android:drawablePadding="10dp"
+                        android:padding="8dp"
+                        android:textColorHint="#b2b2b2"
+                        android:hint="Order Amount"/>
+
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Id"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/orderId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_background"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:drawablePadding="10dp"
+                        android:padding="8dp"
+                        android:textColorHint="#b2b2b2"
+                        android:hint="Order Id"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp">
+
+                <Button
+                    android:id="@+id/submitTicket"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Send Ticket"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/textview_blue_boundry"
+                    android:textColor="@color/colorPrimary"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ticketHistory"
+                    android:layout_marginLeft="2dp"
+                    android:text="Ticket History"
+                    android:background="@drawable/textview_blue_boundry"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.cashback.indicator.AVLoadingIndicatorView
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        app:indicator="LineScale"
+        app:indicator_color="@color/colorPrimary" />
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ddd">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/storeImage"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:padding="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/cashbackPercent"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Upto 3% Cashback"
+                    android:paddingRight="6dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/secondary_text_default_material_light" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="16dp"
+                        android:id="@+id/basket"
+                        android:layout_height="16dp"
+                        android:scaleType="fitStart"
+                        android:layout_marginRight="4dp"
+                        android:tint="@color/secondary_text_default_material_light"
+                        app:srcCompat="@drawable/ic_local_mall_black_24dp"
+
+                        />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/couponType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:typeface="sans"
+                        android:fontFamily="sans-serif"
+                        android:text="SALES / CLEARENCE"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                        android:textColor="#65000000" />
+
+                    <!--  <android.support.v7.widget.AppCompatImageView
+                          android:layout_width="16dp"
+                          android:layout_height="16dp"
+                          android:scaleType="fitXY"
+                          android:layout_marginRight="4dp"
+                          android:tint="@color/secondary_text_default_material_light"
+                          app:srcCompat="@drawable/ic_local_mall_black_24dp"
+                          />-->
+                    <TextView
+                        android:id="@+id/couponCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#31830c"
+                        android:gravity="center"
+                        android:text="BUS1000"
+                        android:layout_marginLeft="4dp"
+                        android:typeface="sans"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/storeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:text="SALES / CLEARENCE"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/secondary_text_default_material_light"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/expDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Exp. 03/10/2017"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:padding="6dp"
+                    android:textColor="@color/secondary_text_default_material_light"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="0dp"
+                    app:srcCompat="@drawable/ic_shopping_cart_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Shop Now"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:typeface="sans"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#00796b"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

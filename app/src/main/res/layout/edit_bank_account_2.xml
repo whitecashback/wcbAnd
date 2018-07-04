@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:gravity="center|left">
+
+        <LinearLayout
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/backFromAddDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_backward_arrow"
+                android:layout_marginLeft="5dp"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:scaleType="fitCenter"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/launchericon"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/back"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Bank Details"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:visibility="invisible"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".12"
+                android:text="Add"
+                android:textSize="18sp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:background="#2e2020"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backFromAddDetail"
+            android:id="@+id/message"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="Something went wrong...!!!"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/top"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:clipToPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tag_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Enter Bank Account Details:"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:padding="5dp"
+                        android:background="@drawable/custom_background">
+                        <Spinner
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinnerItem">
+                        </Spinner>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wireDeatailLayout"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Holder's Name"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <EditText
+                            android:id="@+id/accountNameWrapper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_background"
+                            android:textSize="15sp"
+                            android:drawablePadding="10dp"
+                            android:inputType="textPersonName|textCapSentences"
+                            android:padding="8dp"
+                            android:hint=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bank Name"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <EditText
+                            android:id="@+id/bankNameWrapper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_background"
+                            android:textSize="15sp"
+                            android:drawablePadding="10dp"
+                            android:inputType="textPersonName|textCapSentences"
+                            android:padding="8dp"
+                            android:hint=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Number"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <EditText
+                            android:id="@+id/accountNumberWrapper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_background"
+                            android:textSize="15sp"
+                            android:drawablePadding="10dp"
+                            android:inputType="textPersonName"
+                            android:padding="8dp"
+                            android:hint=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Account Type"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@drawable/custom_background">
+                            <Spinner
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/accountType">
+                            </Spinner>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IFSC Code"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <EditText
+                            android:id="@+id/ifscWrapper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_background"
+                            android:textSize="15sp"
+                            android:drawablePadding="10dp"
+                            android:inputType="textCapCharacters"
+                            android:padding="8dp"
+                            android:hint=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="City"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <EditText
+                            android:id="@+id/cityWrapper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_background"
+                            android:textSize="15sp"
+                            android:drawablePadding="10dp"
+                            android:inputType="textPersonName|textCapSentences"
+                            android:padding="8dp"
+                            android:hint=""/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/paypalLabel"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Enter Paypal Detail"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <EditText
+                        android:id="@+id/paypalDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_background"
+                        android:textSize="15sp"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPersonName|textCapSentences"
+                        android:padding="8dp"
+                        android:hint="Paypal account detail"
+                        android:textColorHint="#b2b2b2"/>
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/addAccount"
+                        android:layout_margin="15dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center"
+                        android:text="Submit"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/textview_blue_boundry"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.cashback.indicator.AVLoadingIndicatorView
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        app:indicator="LineScale"
+        android:visibility="gone"
+        app:indicator_color="@color/colorPrimary" />
+</RelativeLayout>

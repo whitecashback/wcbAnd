@@ -1,0 +1,81 @@
+{
+  "project_info": {
+    "project_number": "917818901488",
+    "firebase_url": "https://cashback-978.firebaseio.com",
+    "project_id": "cashback-978",
+    "storage_bucket": "cashback-978.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917818901488:android:135be0c67e78ba75",
+        "android_client_info": {
+          "package_name": "com.cash.cashback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917818901488-cjqressmjfskq8hkpcibcun5erjcgc2b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cash.cashback",
+            "certificate_hash": "a6937e77c5e3f68a50276bc59e48cc4d18875ff9"
+          }
+        },
+        {
+          "client_id": "917818901488-lt4rt6vegapo2tl743qvfpfmcfvr8kjp.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "917818901488-apv8jk8ogmclg4mtb2obk57v59uecp2i.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "917818901488-9j1khfq9sfg46d4baeerh9rc1q0khoi0.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "917818901488-g3autnqgjr37o0tvclk78vuehpf51ji4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "917818901488-th3kug1sqj0uio54mi7s7pdppq8clt68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqcpNGnI6BnpF9l8zAYY-9KaLeAX5X9Aw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-92784442-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917818901488-lt4rt6vegapo2tl743qvfpfmcfvr8kjp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "917818901488-a5sgvi28ff2gu7fo5agnd9c6bhbfm849.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pump.app.CashbackProject"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

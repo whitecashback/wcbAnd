@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:elevation="4dp"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_boundry">
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:drawablePadding="8dp"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Update Message"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#eee"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/versionNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Current version : 1.02\nUpdated version : 1.03"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/account"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Profile information updated successfully"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:padding="15dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    android:background="@drawable/pop_up_btn"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:id="@+id/noThanks"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:textSize="16sp"
+                    android:layout_margin="3dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="Cancel"/>
+                <TextView
+                    android:background="@drawable/pop_up_btn"
+
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:id="@+id/update"
+                    android:layout_margin="3dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:text="Yes"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

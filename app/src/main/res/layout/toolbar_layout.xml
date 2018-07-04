@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="center"
+    android:id="@+id/toolbarCustom"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize">
+    <RelativeLayout
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/drawerIcon"
+            android:gravity="center|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu"
+                android:tint="#fff"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:scaleType="fitCenter"
+                android:layout_height="32dp"
+                android:id="@+id/logoIcon"
+                app:srcCompat="@drawable/launchericon"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/titleTool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Stores"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:textColor="#fff"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:paddingLeft="8dp"
+                android:visibility="gone"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:id="@+id/toolLogo"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationIcon"
+            android:layout_alignParentRight="true"
+            android:tint="#fff"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_menu_black_24dp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="48dp"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:id="@+id/notification"
+            android:layout_toLeftOf="@+id/navigationIcon"
+            app:srcCompat="@drawable/ic_notifications_black_24dp"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="48dp"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:id="@+id/search"
+            android:layout_toLeftOf="@+id/notification"
+            app:srcCompat="@drawable/ic_search_black_24dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+         android:id="@+id/searchLayout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/backFromSearch"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatImageView
+                android:backgroundTint="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_backward_arrow"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/launchericon_dialog"/>
+        </LinearLayout>
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor"
+            android:layout_weight="1"
+            android:id="@+id/searchHere"
+            android:layout_marginRight="15dp"
+            android:textColorHint="#fff"
+            android:drawablePadding="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search here"
+            android:textColor="#fff"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:drawableTint="#fff"
+            android:drawableLeft="@drawable/search_icon"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/googleSearchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_mic_black_24dp"
+            android:tint="#fff"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

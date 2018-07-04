@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">WhiteCashback</string>
+    <string name="facebook_app_id">472918522894878</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Feature stores</item>
+        <item>All stores</item>
+        <item>Shop by category</item>
+        <item>Wish List</item>
+        <item>My Account</item>
+        <item>Invite your friends</item>
+        <item>Rate us</item>
+        <item>WhiteCashback</item>
+    </string-array>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/fstore</item>
+        <item>@drawable/all_store</item>
+        <item>@drawable/category</item>
+        <item>@drawable/list_fav</item>
+        <item>@drawable/cashback</item>
+        <item>@drawable/invite</item>
+        <item>@drawable/thumbs_up</item>
+        <item>@drawable/about</item>
+    </array>
+
+    <!-- toasts for menu items -->
+    <string name="toast_menu_1">Menu Item 1 clicked</string>
+    <string name="toast_menu_2">Menu Item 2 clicked</string>
+    <string name="unknown_action">Unknown action received</string>
+    <string name="text_action_button">Action button clicked</string>
+    <!--titles for menu items-->
+    <string name="title_menu_1">Menu Item 1</string>
+    <string name="title_menu_2">Menu Item 2</string>
+    <string name="error_invalid_url">URL doesn\'t look valid</string>
+
+    <string name="about_us_text1">WhiteCashback is an exclusive shopping precinct to provide users a comfortable shopping experience. WhiteCashback is a single stop destination for all your shopping needs, with our wide range of collections. Another add-on advantage is that you can save while shopping.
+
+Yes, you heard it right!! The shoppers get rewarded for each purchase they made via us.
+
+The primary goal of WhiteCashback is to improve the user\'s shopping experience by providing countless ways to save and collect rebates while they shop with us. WhiteCashback gives users many options so that they can choose a favorite store among the long list, and can choose their desired product while comparing their price. At last the customer comes out shopping with a nice pick of product at best rates.</string>
+
+    <string name="about_us_text2">WhiteCashback connects with all your favorite retailers/stores/brands so that we bring you a vast collection of products with best deals and discount coupons. We are partnered with the brands like Paytm, Freecharge, Ebay, Amazon, Snapdeal, Flipkart, Jabong, Homeshop18, Naaptol, Makemytrip, Lenskart, Bigrock, Bharatmatrimonial, jeevansaathi.com, shaadi.com and much more. We update and highlight the best deals, offers, cash back and discount coupons that are provided by the retailers for our user benefits.</string>
+
+    <string name="about_us_text3">Customers can join /connect with us at free of cost.</string>
+    <string name="about_us_text4">When the customers Sign Up with us, they get Rs. 10.00 as a bonus.</string>
+    <string name="about_us_text5">For each referral, the customers can earn Rs. 5.00.</string>
+    <string name="about_us_text6">Shop online at your favorite store in a single stop.</string>
+    <string name="about_us_text7">Customers can earn up to 35 % Cashback, Offers , Coupon codes for the purchase.</string>
+    <string name="about_us_text8">Customers can save more and earn more with us.</string>
+
+    <string name="about_us_text9">WhiteCashback is unique since it is not just a cashback site. We provide you numerous benefits when they shop via whitecashback.in. Check out add -on profits that we give to our valuable users.</string>
+    <string name="about_us_text10">WhiteCashback enables incremental savings for the users.</string>
+    <string name="about_us_text11">The users get lucrative offers.</string>
+    <string name="about_us_text12">Exclusive cash back for each purchase.</string>
+    <string name="about_us_text13">Discounts / Coupons provided by retailers.</string>
+    <string name="about_us_text14">WhiteCashback ensures that the users get best online coupons, deals, stores easily with less effort.</string>
+    <string name="about_us_text15">Users can find thousands of money saving promo codes with us.</string>
+    <string name="about_us_text16">Our registration process is straight forward.</string>
+    <string name="about_us_text17">Users get a sign-up bonus right away when they register with us.</string>
+    <string name="about_us_text18">Users can refer their dear and near ones, friends, relatives, colleagues and receive referral bonus as well.</string>
+    <string name="about_us_text19">We let you connect with around 500 inland and global stores/brands/retailers.</string>
+    <string name="about_us_text20">WhiteCashback helps the users to compare and choose from their favorite retailer and can benefit with maximum cash back with their shopping.</string>
+
+    <string name="about_us_text21">175, Saharanpur Road, Patel Nagar, Near Bank Of Baroda,
+Dehradun - 248001, Uttrakhand (India)</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="list_item">
+        <item>Cashback</item>
+        <item>Referral Cashback</item>
+    </string-array>
+
+    <string-array name="payment_type">
+        <item>Select your payment type</item>
+        <item>Bank detail</item>
+        <item>Paypal detail</item>
+    </string-array>
+
+    <string-array name="account_type">
+        <item>Select account type</item>
+        <item>Current</item>
+        <item>Saving</item>
+    </string-array>
+
+    <!-- Strings for GCM -->
+    <string name="title_activity_main">Android Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">GCM: device successfully unregistered!</string>
+    <string name="gcm_message">GCM: you got message!</string>
+    <string name="gcm_error">GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">successfully added device!</string>
+    <string name="server_unregistered">Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+    <string name="app_update">This version of White Cashback became obsolete. Please go to the Google Play Store to download latest version.</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

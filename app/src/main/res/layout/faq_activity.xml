@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ddd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:id="@+id/backFromFaq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_backward_arrow"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:scaleType="fitCenter"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/launchericon"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/term"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="FAQ"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:background="#2e2020"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backFromMissingCashback"
+            android:id="@+id/message"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="Something went wrong...!!!"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+
+        android:layout_height="match_parent"
+        android:elevation="4dp">
+
+<WebView
+    android:layout_margin="16dp"
+    android:id="@+id/faq_Webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></WebView>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

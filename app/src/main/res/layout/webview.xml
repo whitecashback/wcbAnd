@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#e2e2e2">
+
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:id="@+id/top"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backFromBrowser"
+            android:gravity="center"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_backward_arrow"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/storeNameWeb"
+                android:text="M Store name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_toRightOf="@+id/img"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cashbackWeb"
+                android:layout_below="@+id/storeNameWeb"
+                android:text="M Store name"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_toRightOf="@+id/img"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_below="@+id/top"
+        android:id="@+id/progressLine"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:src="@drawable/clip_color"/>
+
+    <TextView
+        android:visibility="gone"
+        android:background="#2e2020"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_below="@+id/progressLine"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="Something went wrong...!!!"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:visibility="gone" />
+
+    <WebView
+        android:visibility="gone"
+        android:layout_below="@+id/progressLine"
+        android:id="@+id/webview1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:background="#b3b3b3"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/mLayoutbeforeWeb"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="#fff">
+
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="White CashBack"/>
+
+        <TextView
+            android:layout_below="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Please wait Navneet Joshi, you are on way"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/storeName"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/storeName"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/animLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_act"
+                />
+
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="0%\n CASHBACK"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            />
+        <TextView
+
+            android:layout_alignParentBottom="true"
+            android:id="@+id/activated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVATED!"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/animLayout"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/small_back"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/moveBack"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/small_back"
+            android:layout_gravity="center"
+            android:rotation="180"
+            android:layout_margin="8dp"
+            android:id="@+id/moveForward"/>
+
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="15dp"
+            android:id="@+id/refresh"/>
+        <!--    <LinearLayout
+
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true">
+
+                <com.cash.util.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/moveBack"/>
+    </com.cash.util.RippleView>
+
+                <com.cash.util.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    android:layout_gravity="center"
+                    android:rotation="180"
+                    android:layout_margin="8dp"
+                    android:id="@+id/moveForward"/>
+
+    </com.cash.util.RippleView>
+
+                <com.cash.util.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/refresh"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/refresh"/>
+    </com.cash.util.RippleView>
+            </LinearLayout>-->
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDeals"
+            android:layout_alignParentRight="true"
+            android:text="22 deal's"
+
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:padding="8dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
